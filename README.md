@@ -4,7 +4,7 @@
 **Course:** Generative AI — JHU Spring II 2026
 
 ## Walkthrough Video
-[Watch Walkthrough Video](https://www.youtube.com/watch?v=bPpY83tmmCI)
+https://www.youtube.com/watch?v=bPpY83tmmCI
 
 ---
 
