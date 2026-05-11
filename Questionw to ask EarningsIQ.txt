@@ -1,0 +1,13 @@
+Question 1 
+What was Apple's total revenue and services revenue in Q4 2025?
+Shows: basic RAG retrieval working
+
+Question 2 — Cross-quarter comparison:
+How has Apple's gross margin changed from Q2 to Q4 2025?
+
+Shows: multi-quarter retrieval and trend analysis
+
+Question 3 — Calculator tool trigger:
+What was the revenue growth rate between Q2 and Q3 2025?
+
+Shows: calculator tool computing precise financial metrics

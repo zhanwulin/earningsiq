@@ -1,0 +1,32 @@
+Slide 1 — Title (15 seconds)
+
+"Hi everyone, I'm Zhanwu Lin. My final project is EarningsIQ — a multi-quarter earnings intelligence assistant. It helps financial analysts ask cross-quarter questions across earnings call transcripts."
+
+
+Slide 2 — Context, User & Problem (30 seconds)
+
+"The target user is a junior financial analyst or business student who regularly reads earnings call transcripts. The problem is simple — transcripts are 20 to 40 pages long, and tracking how management's tone or financial metrics change across multiple quarters requires manually Ctrl+F searching through several PDFs. That takes 30 to 90 minutes per question. Keyword search fails when the analyst doesn't know the exact word used in the transcript."
+
+
+Slide 3 — Solution & Design (40 seconds)
+
+"I built a Streamlit app with three key design choices. First, RAG — all transcripts are chunked, embedded, and stored in a single index with quarter labels. The system retrieves the top 5 most relevant passages across all quarters for each question. Second, a calculator tool — when the model needs to compute financial metrics like revenue growth or margin changes, it calls a Python calculator instead of estimating the math itself. Third, structured output — every answer includes a trend summary, per-quarter citations, and computed metrics so the user can verify the sources."
+
+
+Slide 4 — Evaluation & Results (35 seconds)
+
+"I tested 10 questions across Apple's Q2, Q3, and Q4 2025 transcripts and compared against the baseline — manual Ctrl+F search. EarningsIQ answered in under 30 seconds versus 15 to 30 minutes for the baseline. Accuracy was 80% versus about 60% for keyword search. The system correctly refused out-of-scope questions. The two failure cases were questions requiring external data like analyst estimates that weren't in the transcripts, and tone questions where the relevant language wasn't captured in the top 5 retrieved chunks."
+
+
+Slide 5 — Artifact Snapshot (25 seconds)
+
+"Here's a sample output. I asked how Apple's gross margin changed from Q2 to Q4 2025. The system retrieved passages from all three quarters — Q2 showed a defensive tone about margin pressure, Q3 was cautiously optimistic, and Q4 management said they 'landed in a great spot' above guidance. Each answer is cited back to the source quarter. The full code is on GitHub at github.com/zhanwulin/earningsiq."
+
+
+Slide 6 — Key Takeaways (15 seconds)
+
+"To summarize — EarningsIQ reduces cross-quarter analysis from 30 to 90 minutes to under 30 seconds. RAG grounds every answer in the actual transcript. The calculator tool ensures financial metrics are exact. The main limitation is that it only works with uploaded transcripts — external data like analyst estimates are out of scope. Human review is still needed for any investment decisions. Thank you!"
+
+
+Total: ~2 minutes 40 seconds — fits perfectly in the 2-3 minute limit! 😊
+Practice it once before your presentation and you'll be great!
