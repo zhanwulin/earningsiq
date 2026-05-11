@@ -8,6 +8,8 @@ import json
 import math
 import tempfile
 import numpy as np
+from dotenv import load_dotenv
+load_dotenv()
 import streamlit as st
 from anthropic import Anthropic
 from pypdf import PdfReader
@@ -20,7 +22,9 @@ st.set_page_config(
 )
 
 # ── Anthropic client ──────────────────────────────────────────────────────────
-client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY", ""))
+from dotenv import load_dotenv
+load_dotenv()
+client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
