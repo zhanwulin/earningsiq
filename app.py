@@ -24,6 +24,8 @@ st.set_page_config(
 # ── Anthropic client ──────────────────────────────────────────────────────────
 from dotenv import load_dotenv
 load_dotenv()
+import dotenv
+dotenv.load_dotenv(override=True)
 client = Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
